@@ -1,0 +1,61 @@
+####
+POST  http://localhost:3200/routes/admin/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"test6",
+    "email":"test6@gmail.com",
+    "phone":9125883152,
+    "password":"12345678",
+    "profilePicture":"",
+    "role":"user"
+
+}
+###
+POST  http://localhost:3200/routes/admin/login HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "email":"test5@gmail.com",
+    "password":"12345678"
+
+}
+
+
+
+####
+POST  http://localhost:3200/routes/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"test6",
+    "email":"test6@gmail.com",
+    "phone":9125883152,
+    "password":"12345678",
+    "profilePicture":"",
+    "role":"user"
+
+}
+###
+POST  http://localhost:3200/routes/login HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "email":"test6@gmail.com",
+    "password":"12345678"
+
+}
+
+###
+POST  http://localhost:3200/routes/changePassword HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "newpassword":"12345678",
+    "password":"1234567",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNjY4YWZmMzNlYWU4OTM2N2YwYjdhYiIsImVtYWlsIjoidGVzdDFAZ21haWwuY29tIiwiaWF0IjoxNjM0MTE1MTM4fQ.I_cRad-YK_tCfjOdk9xxL9tcWU036T8n6axbB6ICGjg"
+
+}
